@@ -1,0 +1,27 @@
+* {
+    max-width: 700px;
+    margin: auto;
+}
+
+div {
+    border-radius: 5px;
+}
+
+#header {
+    height: 40px;
+    width: 100%;
+    background-color: #ffcccc;
+    position: fixed;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 430px) {
+    .left,
+    .right {
+      display: none;
+    }
+    .bullets {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
