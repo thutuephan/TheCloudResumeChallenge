@@ -1,5 +1,3 @@
 # TheCloudResumeChallenge
 
-secret access key: dof2S8Q5EOwigBsaleV2NqQ30rv2lclJlpJ/u6KY
-
-Access key ID: AKIAW7MOWZK2O6HBGYTR
+http://mybucketaws-resume-46531321.s3-website-us-east-1.amazonaws.com
