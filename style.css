@@ -18,6 +18,10 @@ h1, .address {
 
 }
 
+.lead {
+  text-align: center;
+}
+
 /* .columns {
   grid-template-columns: 60px 60px;
 } */
