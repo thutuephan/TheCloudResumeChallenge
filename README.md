@@ -13,6 +13,19 @@
 ### Test
 
 ### Infrastructure as Code - AWS SAM
+1. Set up SAM CLI
+
+    - install the AWS SAM CLI, verify the installation `sam --version`
+    - run `sam init`
+    - select `zip`, choose an AWS Quick Start application template `1-Hello World Example`
+    - don't select enable X-Ray tracing o the function in the application (otherwise will be charged)
+    - project name, cloning from https://github.com/aws-sam-cli-app-templates (process may take a moment)
+    - in Windows Power Shell, run `cd cloud-resume-challenge`
+    - then run `sam build`
+    - build succeeded
+    
+
+
 
 ### Source Control
 
