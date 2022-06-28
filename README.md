@@ -23,6 +23,16 @@
     - in Windows Power Shell, run `cd cloud-resume-challenge` (in order to build successfully, python version had to match with the runtime of app which is python3.9) => downloaded from Microsoft Store)
     - then run `sam build`
     - build succeeded
+
+2. Add permissions for SAM
+    - AWSAPIGateway
+    - AWSLambdaFullAccess
+    - IAMFullAccess
+    - AWSCloudFormationFullAccess
+
+3. Deploy SAM
+
+
     
 
 
