@@ -60,10 +60,26 @@ h1, h3, h4, p, li {
   margin-top: 6px;
   margin-left: 50px;
   width:85%;
-  height: 1270px;
-  background-color: pink;
+  height: 1400px;
+  background-color: #edede9;
   
 
+}
+
+#badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ 
+ 
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #footer {

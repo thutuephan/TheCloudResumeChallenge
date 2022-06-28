@@ -20,7 +20,7 @@
     - select `zip`, choose an AWS Quick Start application template `1-Hello World Example`
     - don't select enable X-Ray tracing o the function in the application (otherwise will be charged)
     - project name, cloning from https://github.com/aws-sam-cli-app-templates (process may take a moment)
-    - in Windows Power Shell, run `cd cloud-resume-challenge`
+    - in Windows Power Shell, run `cd cloud-resume-challenge` (in order to build successfully, python version had to match with the runtime of app which is python3.9) => downloaded from Microsoft Store)
     - then run `sam build`
     - build succeeded
     
