@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+#banner {
+    background-image: url(https://images.pexels.com/photos/3551227/pexels-photo-3551227.jpeg?cs=srgb&dl=pexels-aleksey-kuprikov-3551227.jpg&fm=jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+}
+
+#banner .content h1 {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+
+}
+
+@media only screen and (max-width: 430px) {
+    .left,
+    .right {
+      display: none;
+    }
+    .bullets {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
