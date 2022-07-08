@@ -9,23 +9,113 @@ body {
     text-align: center;
 }
 
-
-
-
-#banner {
-    background-image: url(https://images.pexels.com/photos/3551227/pexels-photo-3551227.jpeg?cs=srgb&dl=pexels-aleksey-kuprikov-3551227.jpg&fm=jpg);
-    background-size: cover;
-    background-position: top center;
-    width: 100%;
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-#banner .content h1 {
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.navigation li {
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.address {
+    text-decoration: none;
+}
+.navigation li.logo {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+}
+
+#banner {
+    background-image: url(https://images.pexels.com/photos/1367179/pexels-photo-1367179.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1367179.jpg&fm=jpg);
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    height: 600px;
+}
+
+
+div {
+    display: block;
+}
+
+#banner .content p {
+    border: 3px solid white;
     position: relative;
     top: 50px;
+    width: 400px;
     margin: 0 auto;
 
 }
+.summary {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    color: white;
+    opacity: 0.75;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 
+}
+
+h3 {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 10px;
+
+}
+
+h4 {
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+li {
+    color: grey;
+    font-size: 16px;
+    line-height: 30px;
+}
+.share {
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.share a {
+    background-color: lightgray;
+    border: 1px solid red;
+    border-radius:5px;
+    margin: 10px;
+    padding: 14px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.share a:hover {
+    background: white;
+    border: 1px solid red;
+    color: red;
+}
 @media only screen and (max-width: 430px) {
     .left,
     .right {
