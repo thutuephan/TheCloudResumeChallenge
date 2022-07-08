@@ -116,6 +116,15 @@ li {
     border: 1px solid red;
     color: red;
 }
+
+#footer {
+    float: right;
+    color: red;
+}
+
+#name {
+    font-family: Georgia, cursive;
+}
 @media only screen and (max-width: 430px) {
     .left,
     .right {
