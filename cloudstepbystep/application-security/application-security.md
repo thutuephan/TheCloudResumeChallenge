@@ -3,6 +3,7 @@ Table of Contents
 - [IAM](#iam)
 - [AWS-CLI-Configuration](#aws-cli-configuration)
 - [AWS-SAM-CLI](#aws-sam-cli)
+- [Snippets](#snippets)
 
 ### IAM 
 
@@ -41,5 +42,24 @@ Table of Contents
 
 3. Run `sam init`
 
+4. Error run into while trying to setup AWS SAM CLI:
+- error number 1 (pic1)
 
+Error occured while cloning from https://github.com/aws/aws-sam-cli-app-templates
 
+- error number 2 (pic2)
+A lot of people had the same issue and someone on stackoverflow pointed out the where it went wrong. That was because there was a space between AWS and SAM in the path:
+
+    `Cloning from https://github.com/aws/aws-sam-cli-app-templates (process may take a moment)
+    Error: Unstable state when updating repo. Check that you have permissions to create/delete files in C:\Users\alice\AppData\Roaming\AWS SAM directory or file an issue at https://github.com/aws/aws-sam-cli/issues`
+
+To fix this, run this command:
+
+    `sam init --location "C:\Users[your_user_name]\AppData\Roaming\AWS SAM\aws-sam-cli-app-templates\python3.9\cookiecutter-aws-sam-hello-python"`
+
+This time, a different error occured after filling out the app name. It required to put in `runtime [python3.9]` and `architectures[]` which I did not know what to type in.
+
+- It looks like my local user doesn't have permissions for SAM to write those files/directory I'm in. 
+- Try altering the permissions of my user on the system, maybe running the command with elevated permissions (like run as administrator on powershell???!!!). I know almost nothing of Windows / Windows admin
+
+### Sinppets
