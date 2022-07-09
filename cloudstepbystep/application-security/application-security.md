@@ -63,3 +63,11 @@ This time, a different error occured after filling out the app name. It required
 - Try altering the permissions of my user on the system, maybe running the command with elevated permissions (like run as administrator on powershell???!!!). I know almost nothing of Windows / Windows admin
 
 ### Sinppets
+
+#### SAM error #1
+![sam-cli-error-1](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error-1.png)
+
+### SAM error #2
+![sam-cli-error-2](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error2.png)
+
+
