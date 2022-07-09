@@ -142,6 +142,11 @@ img {
     font-size: 36px;
 }
 
+.error {
+    color: red;
+    font-size: 20px;
+
+}
 @media only screen and (max-width: 430px) {
     .left,
     .right {
