@@ -90,7 +90,7 @@ h4 {
 }
 
 li {
-    color: grey;
+    color: black;
     font-size: 16px;
     line-height: 30px;
 }
@@ -117,14 +117,31 @@ li {
     color: red;
 }
 
-#footer {
+
+
+#name {
+    font-family: 'Sacramento', cursive;
     float: right;
     color: red;
 }
 
-#name {
-    font-family: Georgia, cursive;
+#note {
+    color: darkgray;
+    font-size: 20px;
+    font-family: Georgia;
+    float: left;
+    padding-left: 10px;
 }
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100;
+    vertical-align: middle;
+    float: left;
+    font-size: 36px;
+}
+
 @media only screen and (max-width: 430px) {
     .left,
     .right {
