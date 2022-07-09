@@ -62,12 +62,20 @@ This time, a different error occured after filling out the app name. It required
 - It looks like my local user doesn't have permissions for SAM to write those files/directory I'm in. 
 - Try altering the permissions of my user on the system, maybe running the command with elevated permissions (like run as administrator on powershell???!!!). I know almost nothing of Windows / Windows admin
 
+5. So I decided to have a different approach towards this whole setting and running init.
+
+- I created a sample SAM Project by creating a `src` folder which contains `app.py` file, `commands.sh` and `template.yaml` files
+
+- In the powershell run this command: `aws s3 mb s3://alice-code-sam`
+
+- Then the new bucket named `alice-code-sam` successfully created. (check aws console)
+
 ### Sinppets
 
-#### SAM error #1
-![sam-cli-error-1](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error-1.png)
+#### SAM init error #1
+![sam-init-error-1](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error-1.png)
 
-### SAM error #2
-![sam-cli-error-2](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error2.png)
+#### SAM init error #2
+![sam-init-error-2](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error2.png)
 
 
