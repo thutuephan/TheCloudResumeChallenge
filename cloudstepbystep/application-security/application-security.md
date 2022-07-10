@@ -25,7 +25,7 @@ Table of Contents
 - To be sure it was fully installed, opened Command Prompt and typed `aws --version`:
 `aws-cli/2.7.11 Python/3.9.11 Windows/10 exe/AMD64 prompt/off`
 
-### WS CLI configure
+### AWS-CLI-configuration
 - in the command promt, 
     - typed `aws configure`
     - entered aws access key id, acces secret key, and region name
@@ -70,7 +70,7 @@ This time, a different error occured after filling out the app name. It required
 
 - Then the new bucket named `alice-code-sam` successfully created. (check aws console)
 
-### Sinppets
+### Snippets
 
 #### SAM init error #1
 ![sam-init-error-1](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error-1.png)
