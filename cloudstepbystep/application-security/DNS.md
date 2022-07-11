@@ -71,4 +71,7 @@
 - Got to Certificate
 - Select Certificate Managers
 - Request a certificate for the newly registered domain name
+- Wait for this request to be done and then attach it to the cloudfront
+
+
 
