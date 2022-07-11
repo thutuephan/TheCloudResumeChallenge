@@ -39,10 +39,7 @@ How it works at a high level
 -The edge location will cache the response based on the cache settings we've defined and return back to the client.
 - The next time another client makes similar request, the edge location will first look into the cache before forwarding the request to the origin. 
 
-
-
-
-
+- The idea for the edge location of CloudFront to access the S3 buckets is going to use an OAI (Origin Access Identity) which is an IAM role.
 
 
 
