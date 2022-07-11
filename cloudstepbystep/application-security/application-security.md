@@ -5,7 +5,7 @@ Table of Contents
 - [AWS-SAM-CLI](#aws-sam-cli)
 - [Snippets](#snippets)
 
-### IAM 
+## IAM 
 
 1. Create an IAM user from the root account
 - create a new user (with alias account)
@@ -25,7 +25,7 @@ Table of Contents
 - To be sure it was fully installed, opened Command Prompt and typed `aws --version`:
 `aws-cli/2.7.11 Python/3.9.11 Windows/10 exe/AMD64 prompt/off`
 
-### AWS-CLI-configuration
+## AWS-CLI-configuration
 - in the command promt, 
     - typed `aws configure`
     - entered aws access key id, acces secret key, and region name
@@ -33,7 +33,7 @@ Table of Contents
 - In order to check to see how it works, type in `aws iam list-users`. It will list all the users in my account
 
 
-### AWS SAM CLI 
+## AWS SAM CLI 
 
 1. Install the AWS SAM (Serverless Application Model) CLI 64-bit
 
@@ -70,7 +70,7 @@ This time, a different error occured after filling out the app name. It required
 
 - Then the new bucket named `alice-code-sam` successfully created. (check aws console)
 
-### Snippets
+## Snippets
 
 #### SAM init error #1
 ![sam-init-error-1](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-sam-error-1.png)
