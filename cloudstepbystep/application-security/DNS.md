@@ -3,6 +3,8 @@
 - [What-is-DNS](#what-is-dns)
 - [DNS-Terminologies](#dns-terminologies)
 - [Amazon-Route-53](#amazon-route-53)
+- [Register-A-Domain-Name](#register-a-domain-name)
+- [Certificate](#certificate)
 
 ## What is DNS
 
@@ -59,3 +61,14 @@
 - A container of records that define how to route traffic to a domain and its subdomains
 - Public Hosted Zones - contains records that specify how to route traffic on the Internet (public domain names)
 - Private Hosted Zones - contain records that specify how you route traffic within one or more VPCs. They are not public available and only you within your own virtual private cloud or VPC can resolve this URL.
+
+## Register A Domain Name
+
+- Registered a domain name successfully through Route 53
+
+## Certificate
+
+- Got to Certificate
+- Select Certificate Managers
+- Request a certificate for the newly registered domain name
+
