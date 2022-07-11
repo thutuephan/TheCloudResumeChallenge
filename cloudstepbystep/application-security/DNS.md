@@ -1,0 +1,61 @@
+## Table of Contents
+
+- [What-is-DNS](#what-is-dns)
+- [DNS-Terminologies](#dns-terminologies)
+- [Amazon-Route-53](#amazon-route-53)
+
+## What is DNS
+
+- Domain Name System which translates the human friendly hostnames into the machine IP addresses.
+
+- For example: `www.google.com` => `172.217.18.36`
+
+- DNS is the backbone of the Internet
+- DNS uses hierarchical naming structure 
+
+## DNS Terminologies
+
+- Domain Registrar: Amazon Route 53, GoDaddy,...
+- DNS Records: A, AAAA, CNAME, NS, ...
+- Zone File: contains DNS records
+- Name Server: resolves DNS queries (Authoritative or Non-Authoritative)
+- Top Level Domain (TLD): .com, .us, .in, .gov, .org, ...
+- Second Level Domain (SLD): amazon.com, google.com, ...
+
+        http://api.www.example.com.
+
+- The last dot at the end is called the root, and is the root of all the domain names.
+
+## Amazon Route 53
+1. 
+- It is a highly available, scalable, fully managed and Authoritative DNS 
+- Authoritative = the customer can update the DNS records
+
+- Route 53 is also a Domain Registrar
+
+- It has the ability to check the health of your resources
+- The only AWS service which provides 100% availability SLA.
+- 53 is a reference to the traditional DNS port used by DNS services.
+
+2. Records
+
+- The records define how you want to route traffic for a domain.
+- Each record contains a lot of information:
+    - Domain/subdomain Name - e.g., example.com
+    - Record Type - e.g., A or AAAA
+    - Value - e.g., 12.34.56.78
+    - Routing Policy - how Route 53 responds to queries
+    - TTL - amount of time the record cached at DNS Resolvers
+
+3. Record Types
+
+- `A` - maps a hostname to IPv4
+- `AAAA` - maps a hostname to IPv6
+- `CNAME` - maps a hostname to another hostname
+- NS - Name Servers for the Hosted Zone: Control how traffic is routed for a domain
+
+3.1. Hosted Zones
+
+- A container of records that define how to route traffic to a domain and its subdomains
+- Public Hosted Zones - contains records that specify how to route traffic on the Internet (public domain names)
+- Private Hosted Zones - contain records that specify how you route traffic within one or more VPCs. They are not public available and only you within your own virtual private cloud or VPC can resolve this URL.
