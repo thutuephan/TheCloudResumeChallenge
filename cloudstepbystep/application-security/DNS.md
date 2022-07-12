@@ -5,7 +5,7 @@
 - [Amazon-Route-53](#amazon-route-53)
 - [Register-A-Domain-Name](#register-a-domain-name)
 - [Certificate](#certificate)
-
+- [Create-Record](#create-record)
 ## What is DNS
 
 - Domain Name System which translates the human friendly hostnames into the machine IP addresses.
@@ -81,4 +81,12 @@
 4. create record hosted zone for 
 5. point the custom domain name to cloudfront distribution
 
+
+## Create record
+
+- (while still waiting for the certificate to be validated)
+- In Certificate console, select the Certificate ID
+- In the Domain section, click `Create Records in Route 53`
+
+- To check to see if it the record was created successfully, go to Route 3, under Hosted zone, the new record will be shown with the record name, type and value...
 
