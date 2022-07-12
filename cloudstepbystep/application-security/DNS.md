@@ -73,5 +73,12 @@
 - Request a certificate for the newly registered domain name
 - Wait for this request to be done and then attach it to the cloudfront
 
+## Next steps to take
+
+1. attach the cert to  cloudfront distribution
+2. let route 53 create a hosted zone for us
+3. create record set to point to cloudfront dis.
+4. create record hosted zone for 
+5. point the custom domain name to cloudfront distribution
 
 
