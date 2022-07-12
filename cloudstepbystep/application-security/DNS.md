@@ -104,4 +104,23 @@
 - Edit settings, click edit
 - Under `Custom SSL certificate` choose SSL certificate => `save changes`
 
+## Create A Record
 
+- Go to CloudFront - Distribution
+- In `Alternative Domain Names (CNAMES)` enter the alternative domain name (found in Route53- Hosted zones- CNAMES). In my case, I accidently have the custom domain name and alternative domain name with the same name. 
+
+- save changes
+
+- copy the  distribution domain name`(endpoint), go to Route 53/Hosted zones, click `create record`:
+
+        record name: fillin sub domain
+        record type: A - ROutes traffic to an IPv4 address and some AWS resources
+
+        Select Alias, Choose endpoint: Alias to CloudFront distribution
+
+        Choose distribution: (endpoint)
+
+
+=> create A record
+
+www.alicethebeginnersmind.com
