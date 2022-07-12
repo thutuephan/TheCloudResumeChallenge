@@ -47,3 +47,15 @@
 
 
 
+# (07-12-2022) Day 1 of Re-building everything)
+
+1. SAM build, SAM deploy successfully! Thanks goodness!
+
+- In Powershell, run `sam init` follow instructions either by Lou or on the command screen.
+
+2. Stacks were built successfully in `CloudFormation/Stacks`
+
+3. S3 bucket, Lambda Function, and ApiGateway were built and deployed as well.
+
+Great job!
+
