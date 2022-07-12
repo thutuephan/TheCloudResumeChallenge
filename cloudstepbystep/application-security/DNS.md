@@ -6,6 +6,7 @@
 - [Register-A-Domain-Name](#register-a-domain-name)
 - [Certificate](#certificate)
 - [Create-Record](#create-record)
+
 ## What is DNS
 
 - Domain Name System which translates the human friendly hostnames into the machine IP addresses.
@@ -72,6 +73,8 @@
 - Select Certificate Managers
 - Request a certificate for the newly registered domain name
 - Wait for this request to be done and then attach it to the cloudfront
+
+- After 24 hours waiting, my domain's certificate is finally validated.
 
 ## Next steps to take
 
