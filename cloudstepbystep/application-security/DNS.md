@@ -6,6 +6,7 @@
 - [Register-A-Domain-Name](#register-a-domain-name)
 - [Certificate](#certificate)
 - [Create-Record](#create-record)
+- [Apply-Certificate-to-CLF](#apply-certificate-to-clf)
 
 ## What is DNS
 
@@ -95,4 +96,12 @@
 - In the Domain section, click `Create Records in Route 53`
 
 - To check to see if it the record was created successfully, go to Route 3, under Hosted zone, the new record will be shown with the record name, type and value...
+
+## Apply Certificate to CLF
+
+- In order to attach our SSL certificate to CloudFront distribution, go to CloudFront
+- Under `Distribution`, select `ID`
+- Edit settings, click edit
+- Under `Custom SSL certificate` choose SSL certificate => `save changes`
+
 
