@@ -74,7 +74,10 @@
 - Request a certificate for the newly registered domain name
 - Wait for this request to be done and then attach it to the cloudfront
 
-- After 24 hours waiting, my domain's certificate is finally validated.
+- After 24 hours waiting, my domain's SSL certificate (Secure Sockets Layer) is finally validated.
+
+![aws-ssl-cert](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-domain-certificate.png)
+
 
 ## Next steps to take
 
