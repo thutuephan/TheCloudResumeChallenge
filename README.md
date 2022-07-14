@@ -47,7 +47,7 @@
 
 
 
-# (07-12-2022) Day 1 of Re-building everything)
+## (07-12-2022) Day 1 of Re-building everything)
 
 1. SAM build, SAM deploy successfully! Thanks goodness!
 
@@ -58,4 +58,14 @@
 3. S3 bucket, Lambda Function, and ApiGateway were built and deployed as well.
 
 Great job!
+
+## (07-12-2022) Day 2
+
+1. Created bucket policy
+
+2. Deployed HTML & CSS file to S3 bucket
+
+3. Created Amazon S3 static website 
+
+4. Created `Distribution` in CloudFront
 
