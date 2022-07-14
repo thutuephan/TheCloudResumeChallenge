@@ -2,6 +2,8 @@
 - [AWS-CloudFront](#aws-cloudfront)
 - [CloudFront-Origins](#cloudfront---origins)
 - [CloudFront-At-A-High-Level](#cloudfront-at-a-high-level)
+- [CloudFront-Template](#cloudfront-template)
+
 
 ## AWS CloudFront
 
@@ -41,7 +43,30 @@ How it works at a high level
 
 - The idea for the edge location of CloudFront to access the S3 buckets is going to use an OAI (Origin Access Identity) which is an IAM role.
 
+## CloudFront Template
 
+    MyDistribution:
+        Type: "AWS::CloudFront::Distribution"
+        Properties:
+        DistributionConfig: 
+            DefaultCacheBehavior:
+            ViewerProtocolPolicy: allow-all
+            TargetOriginId: my-fantastic-cloud-website.s3.us-east-1.amazonaws.com
+            DefaultTTL: 0
+            MinTTL: 0
+            MaxTTL: 0
+            ForwardedValues:
+                QueryString: false
+            Origins:
+            - DomainName: my-fantastic-cloud-website.s3.us-east-1.amazonaws.com
+                Id: my-fantastic-cloud-website.s3.us-east-1.amazonaws.com
+                CustomOriginConfig:
+                OriginProtocolPolicy: match-viewer
+            Enabled: "true"
+            DefaultRootObject: index.html
+
+
+- Note: In order to create successfully a distribution in CloudFront, the user has to be in a group which has `AdministratorAccess` policy (IAM)
 
 
 
