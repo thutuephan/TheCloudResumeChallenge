@@ -7,6 +7,7 @@
 - [Certificate](#certificate)
 - [Create-Record](#create-record)
 - [Apply-Certificate-to-CLF](#apply-certificate-to-clf)
+- [Cloud-Website](#cloud-website)
 
 ## What is DNS
 
@@ -114,7 +115,7 @@
 - copy the  distribution domain name`(endpoint), go to Route 53/Hosted zones, click `create record`:
 
         record name: fillin sub domain
-        record type: A - ROutes traffic to an IPv4 address and some AWS resources
+        record type: A - Routes traffic to an IPv4 address and some AWS resources
 
         Select Alias, Choose endpoint: Alias to CloudFront distribution
 
@@ -122,4 +123,16 @@
 
 
 => create A record
+
+## Cloud Website
+
+*** Purchased a different domain name, could not use the first one due to the errors; and had to reset everything
+
+*** Resume cloud website was created and deployed to AWS using Route 53 and CloudFront services. Users can visit at the following addresses:
+
+- https://www.alicezenmind.com/
+
+- https://alicezenmind.com/
+
+*** The webiste was secured by setting up HTTPS & ACM (Amazon Certificate Managers)
 
