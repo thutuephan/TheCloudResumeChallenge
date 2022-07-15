@@ -1,3 +1,14 @@
+## API endpoint
+
+- This API endpoint worked, returned all green "checked" when running `enable CORS`. (LAMBDA without PROXY)
+
+`https://ctxductxo0.execute-api.us-east-1.amazonaws.com/prod/myvisitor`
+
+- But when inspecting the sources in dev tools, there were still errors. 
+
+
+
+
 ## What is API Gateway
 
 1. API Gateway is a service which allows you to publish, maintain, monitor, and secure APIs at any scale
@@ -35,6 +46,10 @@
 3. Tested the `GET` method, good response
 
 4. Created `Resources` method named `myvisitor` and set it directly `enable CORS` to see if it works
+
+
+5. Deployed the new API, and named the stage `prod`
+
 
 
 WE NEED TO INSERT THE ENDPOINT URL OF OUR API GATEWAY INTO INDEX.HTML code so that when the user visits our website, it will call API Gateway and invoke our Lambda function.
