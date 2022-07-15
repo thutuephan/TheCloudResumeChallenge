@@ -25,6 +25,16 @@
 - to support multiple versions of API so you can have different versions for your development, testing, and production environment.
 
 
+## Create a New API
+
+
+1. Failed to setup CORS with AWS Lambda and API Gateway (which was automatically created when configuring SAM template)
+
+2. Created a new API which invokes the same the Lambda function
+
+3. Tested the `GET` method, good response
+
+4. Created `Resources` method named `myvisitor` and set it directly `enable CORS` to see if it works
 
 
 WE NEED TO INSERT THE ENDPOINT URL OF OUR API GATEWAY INTO INDEX.HTML code so that when the user visits our website, it will call API Gateway and invoke our Lambda function.
