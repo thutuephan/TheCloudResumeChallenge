@@ -69,3 +69,10 @@ Great job!
 
 4. Created `Distribution` in CloudFront
 
+5. Registered a new domain name in Route 53
+
+6. Secured the website by setting up HTTPS and ACM
+
+7. Webiste is up and running
+
+

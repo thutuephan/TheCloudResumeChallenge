@@ -67,6 +67,3 @@ How it works at a high level
 
 
 - Note: In order to create successfully a distribution in CloudFront, the user has to be in a group which has `AdministratorAccess` policy (IAM)
-
-
-

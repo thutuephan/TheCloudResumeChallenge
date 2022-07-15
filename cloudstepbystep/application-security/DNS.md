@@ -105,7 +105,7 @@
 - Edit settings, click edit
 - Under `Custom SSL certificate` choose SSL certificate => `save changes`
 
-## Create A Record
+## Create A (Alias) Record
 
 - Go to CloudFront - Distribution
 - In `Alternative Domain Names (CNAMES)` enter the alternative domain name (found in Route53- Hosted zones- CNAMES). In my case, I accidently have the custom domain name and alternative domain name with the same name. 
@@ -128,11 +128,12 @@
 
 *** Purchased a different domain name, could not use the first one due to the errors; and had to reset everything
 
+*** The webiste was secured by setting up HTTPS (choose `Redirect to HTTPS`) & ACM (Amazon Certificate Managers)
+
+*** Pointed the custom DNS domain name to the CloudFront distribution
+
 *** Resume cloud website was created and deployed to AWS using Route 53 and CloudFront services. Users can visit at the following addresses:
 
 - https://www.alicezenmind.com/
 
 - https://alicezenmind.com/
-
-*** The webiste was secured by setting up HTTPS & ACM (Amazon Certificate Managers)
-
