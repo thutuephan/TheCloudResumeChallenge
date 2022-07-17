@@ -75,3 +75,17 @@ Great job!
 
 7. Webiste is up and running
 
+## Day 3
+
+8. API Gateway 
+9. Lambda function
+
+## Day 4
+
+10. Error and Trouble shooting
+
+## Day 5
+
+11. Created DynamoDB database
+
+The visitor counter will need to retrieve and update its count in a database.
