@@ -34,6 +34,20 @@ Resources:
       BucketName: my-fantastic-cloud-website
 
 
+
+  DynamoDBTable:
+        Type: AWS::DynamoDB::Table
+        Properties:
+            TableName: alice-cloud-resume
+            BillingMode: PAY_PER_REQUEST
+            AttributeDefinitions:
+                - AttributeName: "ID"
+                  AttributeType: "S"
+            KeySchema:
+                - AttributeName: "ID"
+                  KeyType: "HASH"
+
+
   MyDistribution:
     Type: "AWS::CloudFront::Distribution"
     Properties:
