@@ -38,6 +38,10 @@ ul {
 .address {
     text-decoration: none;
 }
+
+.address1 {
+    list-style: none;
+}
 .navigation li.logo {
     color: black;
     font-size: 18px;
@@ -156,6 +160,8 @@ img {
     text-align: center;
     padding-top: 100px;
 }
+
+
 @media only screen and (max-width: 430px) {
     .left,
     .right {

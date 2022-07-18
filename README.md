@@ -82,10 +82,34 @@ Great job!
 
 ## Day 4
 
-10. Error and Trouble shooting
+10. Error and Troubleshooting
 
 ## Day 5
 
 11. Created DynamoDB database
 
 The visitor counter will need to retrieve and update its count in a database.
+
+## Day 6
+
+### New Issues
+
+1.  Issue #1: could not update contents in S3 bucket were udpated, yet not reflecting in the website.
+
+- Solution: Create an invalidation in CloudFront with the Object Paths as `/*`.
+
+- The issue was still not solved
+
+- A different approach: Updated and Deployed the current CloudFront Distribution, with another `Alternative Domain Name`
+
+- Result: The website endpoint is updated, distribuition domain name `...cloudfront.net` is therefor updated as well. However, another issue was discovered.
+
+2. Issue #2: When clicking on `alternative domain name` and `registered domain name`, the webiste couldn't be access
+
+- Solution: 
+
+    - requested a new certificate which included 2 domains
+    - attached the new certificate to the new cloudfront distribution
+    - under `custom SSL certificate`, point to the one was last created.
+
+- Result: the website can be accessed on both custom domain and main domain.
