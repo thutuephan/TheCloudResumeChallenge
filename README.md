@@ -102,9 +102,9 @@ The visitor counter will need to retrieve and update its count in a database.
 
 - A different approach: Updated and Deployed the current CloudFront Distribution, with another `Alternative Domain Name`
 
-- Result: The website endpoint is updated, distribuition domain name `...cloudfront.net` is therefor updated as well. However, another issue was discovered.
+- Result: The website endpoint is updated, distribution domain name `...cloudfront.net` is therefore updated as well. However, another issue was discovered.
 
-2. Issue #2: When clicking on `alternative domain name` and `registered domain name`, the webiste couldn't be access
+2. Issue #2: When clicking on `alternative domain name` and `registered domain name`, the website couldn't be accessed.
 
 - Solution: 
 
@@ -113,3 +113,13 @@ The visitor counter will need to retrieve and update its count in a database.
     - under `custom SSL certificate`, point to the one was last created.
 
 - Result: the website can be accessed on both custom domain and main domain.
+
+### API Gateway CORS 
+
+![aws-apigateway-config]()
+
+- The CORS issue was finally resolved. There were nothing wrong with the steps taken before (modified lambda handler function in app.js, `actions` -> `enable CORS`).
+
+- The resource was actually configured for CORS but somehow it kept showing errors `Add Access-Control-Allow-Headers` and so on. 
+
+- Tested the response of the website in Chrome dev tools, everything worked. 

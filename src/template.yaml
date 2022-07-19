@@ -63,8 +63,8 @@ Resources:
         Origins:
           - DomainName: my-fantastic-cloud-website.s3.us-east-1.amazonaws.com
             Id: my-fantastic-cloud-website.s3.us-east-1.amazonaws.com
-            CustomOriginConfig:
-              OriginProtocolPolicy: match-viewer
+            # CustomOriginConfig:
+            #   OriginProtocolPolicy: match-viewer
         Enabled: "true"
         DefaultRootObject: index.html
 

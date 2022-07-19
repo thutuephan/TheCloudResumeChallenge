@@ -7,7 +7,13 @@
 - But when inspecting the sources in dev tools, there were still errors. 
 
 
+*** Update (07/19/2022)
 
+- The CORS issue was finally resolved. There were nothing wrong with the steps taken before (modified lambda handler function in app.js, `actions` -> `enable CORS`).
+
+- The resource was actually configured for CORS but somehow it kept showing errors `Add Access-Control-Allow-Headers` and so on. 
+
+- Tested the response of the website in Chrome dev tools, everything worked. 
 
 ## What is API Gateway
 
