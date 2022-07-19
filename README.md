@@ -116,7 +116,7 @@ The visitor counter will need to retrieve and update its count in a database.
 
 ### API Gateway CORS 
 
-![aws-apigateway-config]()
+![aws-apigateway-config](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-apigateway-cors-config.png)
 
 - The CORS issue was finally resolved. There were nothing wrong with the steps taken before (modified lambda handler function in app.js, `actions` -> `enable CORS`).
 
