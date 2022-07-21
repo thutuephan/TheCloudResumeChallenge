@@ -17,7 +17,7 @@ When trying to enable CORS, there were 2 errors appeared:
 - 2. Add Access-Control-Allow-Origin Integration Response Header Mapping to GET method
 
 ![Integration-Mapping-Error]()
-    - Tried so many different ways to modify the headers, read so many docs on how to enable CORS with Lambda Proxy Ingreation, tested back and forth. Nothing worked.
+    - Tried so many different ways to modify the headers, read so many docs on how to enable CORS with Lambda Proxy Integration, tested back and forth. Nothing worked.
 
 ![Lambda-Error]()
 
