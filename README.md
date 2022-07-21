@@ -123,3 +123,13 @@ The visitor counter will need to retrieve and update its count in a database.
 - The resource was actually configured for CORS but somehow it kept showing errors `Add Access-Control-Allow-Headers` and so on. 
 
 - Tested the response of the website in Chrome dev tools, everything worked. 
+
+### 07/18 - 07/20
+
+Troubleshooting!!!
+
+### Settup a PUT lambda (07/20/2022)
+
+1. Rename GET function (path, mod file, directory)
+2. Setup a pUT function(path, mod file, directory)
+3. Update index.html to call new path
