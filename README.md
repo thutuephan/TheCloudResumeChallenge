@@ -147,4 +147,4 @@ Things to do:
 2. write unit-tests (later)
 3. Docker installed for SAM local command
 4. AWS credentials with exec (local permissions for Dynamo)
-5. Need to give Lambda permissions for Dynamo to be accessed.
+5. Need to give Lambda permissions for Dynamo to be accessed (by adding the DynamoDBCrudPolicy to put function).
