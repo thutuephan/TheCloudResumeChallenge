@@ -8,6 +8,8 @@
 
 - Reason: I needed to redirect HTTP to HTTPs under `Behaviors`.
 
+![cloudfront-behavior](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-cloudfront-invalidation.png)
+
 - Solutions: 
     - Created a behavior with Viewer protocol policy is `Redirect HTTP to HTTPS`, and Path pattern is `*`
     - Created an invalidation `/*`

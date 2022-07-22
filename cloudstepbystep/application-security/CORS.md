@@ -12,14 +12,14 @@ When trying to enable CORS, there were 2 errors appeared:
 
 - 1. Add Access-Control-Allow-Origin Method Response Header to GET method: solved by adding method response type HTTP 200
 
-![GET-MethodResponse]()
+![GET-MethodResponse](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-apigateway-cors-solution1a.png)
 
 - 2. Add Access-Control-Allow-Origin Integration Response Header Mapping to GET method
 
 ![Integration-Mapping-Error]()
     - Tried so many different ways to modify the headers, read so many docs on how to enable CORS with Lambda Proxy Integration, tested back and forth. Nothing worked.
 
-![Lambda-Error]()
+![Lambda-Error](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/lambda.png)
 
 
 
@@ -30,7 +30,7 @@ When trying to enable CORS, there were 2 errors appeared:
 
     - Got the final header in app.js as bellow
 
-            'headers': {
+            `'headers': {
                 'Access-Control-Allow-Origin': '*',
                 'Access-Contr0l-Allow-Methods': 'GET',
                 'Access-Control-Allow-Headers': '*',
@@ -38,7 +38,7 @@ When trying to enable CORS, there were 2 errors appeared:
                 'Content-Type': 'application/json'
                 
             },
-            
+            `
 
 - I still don't know how and why it finally worked!!! I got the exact same thing from the very beginning. 
 
