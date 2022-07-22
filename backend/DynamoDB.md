@@ -27,7 +27,7 @@ I used `on-demand` pricing for the database for this project
 - Each item has attributes (can be added over time / can be null)
 
 
-## Template
+### Template
 
     DynamoDBTable:
         Type: AWS::DynamoDB::Table
@@ -41,3 +41,18 @@ I used `on-demand` pricing for the database for this project
                 - AttributeName: "ID"
                   KeyType: "HASH"
 
+
+### DynamoDBCrudPolicy
+
+- Lambda function doesn't have access to the DynamoDB because by default lambda itself is locked down. We can request things externally but we can't request generic internal resources from AWS without explicitly allowing them.
+
+- So we need to add a policy to the lambda function, which allows to create, read, update, delete items in the database table. 
+
+- Add this code to the put function in `template.yaml`
+
+        Properties:
+            Policies:
+                - DynamoDBCrudPolicy:
+                    TableName: alice-resume-cloud2
+
+                    

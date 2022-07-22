@@ -133,3 +133,18 @@ Troubleshooting!!!
 1. Rename GET function (path, mod file, directory)
 2. Setup a pUT function(path, mod file, directory)
 3. Update index.html to call new path
+
+### 07/21/2022
+
+1. Installed and imported Python boto3
+2. Modified runtime and switch handler code to a `.py` file
+
+### Insert Data Into DynamoDB (07/22/2022)
+
+Things to do:
+
+1. Need to use AWS SDK (already installed boto3 library)
+2. write unit-tests (later)
+3. Docker installed for SAM local command
+4. AWS credentials with exec (local permissions for Dynamo)
+5. Need to give Lambda permissions for Dynamo to be accessed.
