@@ -69,7 +69,7 @@ Resources:
             TableName: alice-resume-cloud2
 
       CodeUri: put-function/
-      Handler: put-function
+      Handler: app.lambdaHandler
       Runtime: python3.9
       Architectures:
         - x86_64
