@@ -5,8 +5,8 @@ import json
 print('Loading function')
 # resource: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update_item
 
-    dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table('alice-resume-cloud2')
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('alice-resume-cloud2')
 
 def lambda_handler(event, context):
     response = table.update_item(
