@@ -148,3 +148,11 @@ Things to do:
 3. Docker installed for SAM local command
 4. AWS credentials with exec (local permissions for Dynamo)
 5. Need to give Lambda permissions for Dynamo to be accessed (by adding the DynamoDBCrudPolicy to put function).
+
+
+### How To Pull Data From DynamoDB And Show Them
+
+The reason why I failed to fetch data from dynamodb was that I did the put operation to insert the new item but never I did `GetItem` and `querry` operations. How dumb!
+
+1. Use AWS SDK 
+2. 
