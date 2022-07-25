@@ -8,6 +8,8 @@ Enabling CORS with API Gateway and Lambda function
 
 ## Errors
 
+### Error 1
+
 When trying to enable CORS, there were 2 errors appeared:
 
 - 1. Add Access-Control-Allow-Origin Method Response Header to GET method: solved by adding method response type HTTP 200
@@ -43,4 +45,33 @@ When trying to enable CORS, there were 2 errors appeared:
 - I still don't know how and why it finally worked!!! I got the exact same thing from the very beginning. 
 
 
+### Error 2
 
+The whole response body (status code, headers, body) displayed on the page. 
+
+
+![visitor-counter](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-output-error.png)
+
+What I did to solve this issue?
+
+- Followed the instructions recommended in this article:
+
+[CORS-in-API-Gateway](https://medium.com/@patrick.krisko/cors-in-api-gateway-3d615cc0d1)
+
+
+    - Go to OPTIONS - Method Execution - Integration Response - Mapping Templates
+
+    - Modify Content-Type: application/json
+    - On the right hand side of if, copy the code and paste it to "Generate template" section:
+
+        Generate template":  #set($context.responseOverride.header[“Access-Control-Allow-Origin”] = $stageVariables.allowedOrigin)
+
+    - Go to Stages, deploy that API again to Prod stage
+
+    - Check Lambda function -> should return 200 code
+
+    - Invoke GET url again
+
+    - It rendered only the visitor counts. 
+
+![visitor-counter-rendered]()

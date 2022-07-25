@@ -169,12 +169,21 @@ The reason why I failed to fetch data from dynamodb was that I did the put opera
 
 - Result: Got the output rendered successfully on the frontend. But another issue occured.
 
-![visitor-counter]()
+![visitor-counter](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-output-error.png)
 
 2. Problem #2:
 
 - Issue: the whole response body (status code, headers, body) displayed on the page. 
 - Goal: only the body which has the visitor counter rendered.
+
+
+### 07/25
+
+Finally got this output-rendered-issue solved. 
+
+See `CORS.md` file for resolution and explanation.
+
+
 
 
 
