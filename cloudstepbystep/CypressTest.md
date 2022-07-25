@@ -1,5 +1,7 @@
 ## Cypress Test
 
+### Intro
+
 An end-to-end or smoke test is run after your API gets deployed. It uses the real, live URL of your API and makes sure that it provides the expected responses to a test call. This indirectly verifies that
 
 1. your Lambda code is working as expected,
@@ -18,3 +20,8 @@ Things to check in this smoke test:
 
 - Make sure you are checking edge cases in your funciton logic. What happens if the visitor count is not initialized?
 
+### Installation
+
+    `npm install cypress --save-dev`
+
+    
