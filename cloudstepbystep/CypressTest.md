@@ -24,4 +24,17 @@ Things to check in this smoke test:
 
     `npm install cypress --save-dev`
 
-    
+### Configuration
+
+- From the root file of the project, run this command
+
+        `./node_modules/.bin/cypress open`
+
+- Select testing type: E2E Testing
+
+- Cypress files will be automatically added to the project: 
+
+        - `cypress.config.js`
+        - `cypress/fixtures/example.js`
+        - `cypress/support/commands.js`
+        - `cypress/support/e2e.js`
