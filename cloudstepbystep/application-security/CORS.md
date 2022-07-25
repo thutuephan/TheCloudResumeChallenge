@@ -74,4 +74,6 @@ What I did to solve this issue?
 
     - It rendered only the visitor counts. 
 
-![visitor-counter-rendered]()
+![visitor-counter-rendered](https://github.com/thutuephan/TheCloudResumeChallenge/blob/main/assets/images/aws-images/aws-output-rendered.png)
+
+
