@@ -156,3 +156,27 @@ The reason why I failed to fetch data from dynamodb was that I did the put opera
 
 1. Use AWS SDK 
 2. 
+
+
+### 07/22 - 07/24 Debugging
+
+1. Problem #1: 
+
+- Issue: Got Lambda working, DynamoDB table had new created item which increments each time the website was visited or refreshed, API Gateway worked fine (all green checks when enabling CORS). HOWEVER, the output was not rendered on the page and there were 3 errors shown in the dev tools.
+
+
+- How I solved it: turned off LAMBDA_PROXY
+
+- Result: Got the output rendered successfully on the frontend. But another issue occured.
+
+![visitor-counter]()
+
+2. Problem #2:
+
+- Issue: the whole response body (status code, headers, body) displayed on the page. 
+- Goal: only the body which has the visitor counter rendered.
+
+
+
+
+
