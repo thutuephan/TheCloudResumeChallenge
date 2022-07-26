@@ -2,7 +2,7 @@
 
 ### Intro
 
-An end-to-end or smoke test is run after your API gets deployed. It uses the real, live URL of your API and makes sure that it provides the expected responses to a test call. This indirectly verifies that
+I. An end-to-end or smoke test is run after your API gets deployed. It uses the real, live URL of your API and makes sure that it provides the expected responses to a test call. This indirectly verifies that
 
 1. your Lambda code is working as expected,
 
@@ -18,7 +18,16 @@ Things to check in this smoke test:
 
 - Make sure your API responds to unexpected input correctly; what if the inbound request is not formatted the right way?
 
-- Make sure you are checking edge cases in your funciton logic. What happens if the visitor count is not initialized?
+- Make sure you are checking edge cases in your function logic. What happens if the visitor count is not initialized?
+
+
+II. 
+
+A solid test generally covers 3 phases:
+
+- Set up the application state.
+- Take an action.
+- Make an assertion about the resulting application state.
 
 ### Installation
 
