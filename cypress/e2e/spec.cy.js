@@ -31,12 +31,14 @@ describe('My First Test', () => {
 
 // "only" keyword will make cypress run only the specific one. If I want to test all, remove the "only" keyword
 
-  it.only('the features on the homepage are correct', () => {
-    cy.visit('https://alicezenmind.com')
+it.only('the features on the homepage are correct', () => {
+  cy.visit('https://alicezenmind.com')
 
-    cy.get('#fetch')
-    cy.get('data')
-  })
+  cy.get('#fetch')
+  cy.get('h3').contains('CERTIFICATIONS') // THIS SHOULD BE REPLACED BY THE DATA ATTRIBUTE BUT SOMETHING WENT WRONG
+
+  // cy.get('[data-top="3185.7999572753906"]') I DONT KNOW WHY THIS CODE NEVER WORKED. ASSERTION ERROR
+})
 
 })
 
